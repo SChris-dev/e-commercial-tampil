@@ -1,0 +1,252 @@
+html {
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+.container-fluid a.betulkan {
+    position: fixed;
+    border-bottom: 4px solid #ffc107;
+    margin: 0px 0px 0px 25px;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+nav.navbar-shadow {
+    box-shadow: 0 0 14px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    height: 100vh;
+}
+
+
+/* home */
+
+section.container-home {
+    background-image: url(img/home-bg-alt.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-home .content-home .backy {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container-home .content-home p {
+    font-size: 17px;
+}
+
+.btn-custom a {
+    text-decoration: none;
+    color: white;
+    padding: 15px 30px;
+    border: 1px solid #ffc107;
+    background: #ffc107;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btn-custom a:hover {
+    background: none;
+    border: 1px solid #ffc107;
+    color: #ffc107;
+}
+
+.container-home .content-home .btn-custom {
+    margin-top: 10px;
+}
+
+
+/* catalog */
+
+ul.tab-shadow {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px -4px 20px 0px;
+}
+
+.card-merapikan {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 5%;
+    margin-bottom: 50px;
+}
+
+.card-merapikan .card {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.card-merapikan .card .card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-merapikan .card .card-footer span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.content-catalog ul .nav-item .active {
+    font-weight: 500;
+    background-color: #6c757d;
+}
+
+.content-catalog ul .nav-item .nav-link {
+    color: black;
+}
+
+
+/* detail content */
+
+.content-detail {
+    display: grid;
+    justify-items: center;
+    overflow-x: hidden;
+    height: 100%;
+}
+
+.content-detail::-webkit-scrollbar {
+    display: none;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.content-detail .product-desc {
+    max-width: 80%;
+}
+
+a.btn-custom {
+    text-decoration: none;
+    color: white;
+    padding: 10px 30px;
+    border: 1px solid #ffc107;
+    background: #ffc107;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+a.btn-custom:hover {
+    background: none;
+    border: 1px solid #ffc107;
+    color: #ffc107;
+}
+
+.small-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 79%;
+    margin-bottom: 10%;
+}
+
+.small-group span {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+/* checkout */
+
+.content-checkout {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+form {
+    width: 80%;
+    border: 2px solid #ffc107;
+    border-radius: 5px;
+    padding: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+form textarea {
+    resize: none;
+}
+
+
+/* untuk browser selain fire fox */
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* untuk fire fox */
+
+
+/* input[type=number] {
+    -moz-appearance: textfield;
+} */
+
+
+/* footer */
+
+section.footer {
+    height: 10vh;
+    margin-top: 65%;
+}
+
+footer .footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+footer {
+    background-color: #f3f4f6;
+    height: 10vh;
+    margin-top: 45%;
+    box-shadow: 0 -10px 20px rgba(0, 0, 0, 0.3);
+}
+
+footer p {
+    text-align: center;
+    line-height: 10vh;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #004aeb;
+    font-weight: bold;
+}
+
+footer.details {
+    margin-top: 1%;
+}
+
+footer.checkout {
+    margin-top: 25%;
+}
+
+@media screen and (max-width: 576px) {
+    .container-fluid a.betulkan {
+        position: relative;
+    }
+    footer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1139px) {
+    footer {
+        display: none;
+    }
+}
